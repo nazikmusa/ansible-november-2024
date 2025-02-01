@@ -1,0 +1,12 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Install apache
+    ansible.builtin.apt:
+      name: apache2
+
+  - name: Start apache
+    ansible.builtin.service:
+      name: apache2
+      state: restarted
+      enabled: yes
