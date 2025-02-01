@@ -7,3 +7,5 @@
     include: packages.yml  
   - name: Install Wordpress
     include: wordpress.yml  
+  - name: Install database
+    include: db.yml
