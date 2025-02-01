@@ -3,7 +3,7 @@
   tasks:
   - name: Install apache
     ansible.builtin.apt:
-      name: apache2
+      name: 
 
   - name: Start apache
     ansible.builtin.service:

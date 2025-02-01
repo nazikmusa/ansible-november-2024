@@ -1,9 +1,6 @@
 - name: Install packages
   ansible.builtin.apt:
-    name:
-      - apache2
-      - tree
-      - unzip
+    name: apache2  
     state: present
     update_cache: yes
 

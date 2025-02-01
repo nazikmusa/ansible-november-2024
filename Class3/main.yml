@@ -3,3 +3,7 @@
   tasks:
   - name: Install Apache
     include: apache.yml
+  - name: Install packages
+    include: packages.yml  
+  - name: Install Wordpress
+    include: wordpress.yml  
