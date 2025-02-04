@@ -1,0 +1,10 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-east-2
+
+# filters:
+#   tag:Name: db
+
+keyed_groups:
+- key: tags
+- key: instance_type
